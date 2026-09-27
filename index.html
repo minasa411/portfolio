@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sachi Minami, UX researcher at Expedia.">
+  <title>Sachi Minami — UX Researcher</title>
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: #fff; color: #191919; font-family: Arial, Helvetica, sans-serif; line-height: 1.55; }
+    a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    .page { width: min(720px, calc(100% - 40px)); margin: 0 auto; }
+    header { display: flex; align-items: baseline; justify-content: space-between; gap: 24px; padding: 28px 0; font-size: 14px; }
+    header a { text-decoration: none; }
+    nav { display: flex; gap: 20px; color: #666; }
+    nav a:hover, nav a:focus-visible { color: #191919; text-decoration: underline; }
+    .intro { padding: clamp(110px, 20vh, 180px) 0 150px; }
+    h1 { margin: 0 0 12px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(48px, 8vw, 76px); font-weight: 400; letter-spacing: -.055em; line-height: 1.1; }
+    .intro p { margin: 0; color: #555; font-size: clamp(17px, 2.5vw, 20px); }
+    .employer { color: #315a9b; font-family: Georgia, "Times New Roman", serif; font-style: italic; font-size: 1.08em; }
+    section { border-top: 1px solid #ddd; padding: 26px 0 110px; }
+    h2 { margin: 0 0 28px; font-family: Georgia, "Times New Roman", serif; font-size: 27px; font-weight: 400; letter-spacing: -.035em; }
+    section p { max-width: 580px; margin: 0; color: #555; font-size: 16px; }
+    section p + p { margin-top: 16px; }
+    form { display: flex; gap: 8px; max-width: 440px; margin-top: 26px; }
+    input, button { border: 1px solid #aaa; border-radius: 0; font: inherit; font-size: 14px; }
+    input { min-width: 0; flex: 1; padding: 10px 12px; background: #fff; color: #191919; }
+    button { padding: 10px 16px; background: #191919; color: #fff; border-color: #191919; cursor: pointer; }
+    button:hover, button:focus-visible { background: #444; }
+    .error { min-height: 1.5em; margin-top: 10px; color: #a22626; font-size: 14px; }
+    .case { border-top: 1px solid #e5e5e5; padding: 22px 0 28px; }
+    .case:first-child { margin-top: 12px; }
+    .case h3 { margin: 0 0 6px; font-family: Georgia, "Times New Roman", serif; font-size: 22px; font-weight: 400; letter-spacing: -.02em; }
+    .case p { font-size: 15px; }
+    .case small { display: block; margin: 0 0 12px; color: #777; font-size: 13px; }
+    .lock { margin-top: 20px; padding: 0; border: 0; background: none; color: #555; text-decoration: underline; text-underline-offset: 3px; }
+    .lock:hover, .lock:focus-visible { background: none; color: #191919; }
+    footer { border-top: 1px solid #ddd; padding: 24px 0 40px; color: #777; font-size: 13px; }
+    [hidden] { display: none !important; }
+    @media (max-width: 600px) { .intro { padding: 100px 0 120px; } section { padding-bottom: 80px; } nav { gap: 12px; } }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header><a href="#top">Sachi Minami</a><nav aria-label="Navigation"><a href="#about">About</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav></header>
+    <main id="top">
+      <div class="intro"><h1>Sachi.</h1><p>UX researcher currently working at <span class="employer">Expedia.</span></p></div>
+      <section id="about" aria-labelledby="about-title">
+        <h2 id="about-title">About</h2>
+        <p>I work with teams to understand people and turn research into clearer product decisions.</p>
+      </section>
+      <section id="projects" aria-labelledby="projects-title">
+        <h2 id="projects-title">Projects</h2>
+        <div id="gate">
+          <p>Selected work is password protected.</p>
+          <form id="unlock-form">
+            <input id="password" type="password" placeholder="Password" aria-label="Project password" autocomplete="current-password" required>
+            <button type="submit">View projects</button>
+          </form>
+          <p class="error" id="error" role="status" aria-live="polite"></p>
+        </div>
+        <div id="project-list" hidden></div>
+        <button class="lock" id="lock" type="button" hidden>Lock projects</button>
+      </section>
+      <section id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Contact</h2>
+        <p>Contact details to be added.</p>
+      </section>
+    </main>
+    <footer>© 2026 Sachi Minami</footer>
+  </div>
+  <script id="vault" type="application/json">{"salt":"mciJrIitmbZrlui5KjJ52Q==","iv":"bmA3LlfgLzhw0nxj","data":"+RfO12iRQVg7FzrEn6i2uSIGmKWSY/T2QKeM8ZaCjdeb8dio3ergRV/aynmkQOn3jXo8qWax+6TcWmCqVhmXy6a0yOhEu/x1Kn4jzHk2PTVcGukCoEshxjtG5+uAR4sMWW8OXbVbEWVGEg0xg8hj9dba8yfkRgKVIK6OY0MQ8XzH0aXW8Z8QiICm4rb3nmRClzvO0LCEosP9woMa7tr5rpMdU00xkdJm4+Nu1P9CiqQquIwU2x9LlcpckgSpB+Z7xDXgIdzVEVM28tD3DNp1UYCHfS1nr79iXOb4QiU108BB8luypU+0Q1+gOatKYL+veI8WMnzI3Um2MoR7CJYdAKGTgOQUicZTpQZ0JmHMxA9O9vYuJOy6/0Smli4YscUcS/BDfGyDVjOUi3syXjfK/H6pbSPQaMJKxg7NCiHDmz+iaI4dp4bsm0MRCvLwRLfK9/hSKJLLRE3xV3vehPaMDYN4xCbNdJ3/t2ugN79le9WVEzj506qovpizG4beux9ACCuGWdZNd5DTCMuzSdE0gypYNaAaHKrw/L+O5FgYhgxYNZs+VWdfaqIJ/iazb7cQm8YT7teadRtHM5MyPCCcJx3M6vWmzBx02L59BpUxN5RupLGrLj+eTRNrJItfWZn63weoE9ZjIUVx+f/aVE5oobfjgKSgTQ7UwMy6qkrjm5HM+DTBr+axWAeY3RJksxEEnCv5NeIMlGDlY+b0VXKAXYnbMP0lzIW5hkMgEWGqMOyh838yYgC34aMMLJmFukwcpG9lLhSKzeQx9T+Ch3+249BQW4xIAr+3WIb9cMaVhqvZIuAuCatVufBLWIDWCRNxKHvtvAEGybbInTzfZcelRoyHssmKif4KGT6Swl19620i46mCtkHSo32ndWInijGUfjJDt4q22hYIDpGA4qRndZYoBTK2vR6TqT8E2qTQ78cQ8p3dIoZazPl+IBbWQgCo/t4iOY9fK+AGvTlentyV7AqG9t7BEhzHEBUjGZawYJPqydtzs3qRSsCdk+sQX7Jt7HxzneubTgbcMHFPvv1PBM2kmnLPmTQEEUQ1rC8cUE/j3kE/jXkcth4FlalImt3rQ/kCGByeDXuTqGWXkwgxrSj6fZFy3mu9FdHYDcIElAQlOZhMPOTYClLIhRvsNG8+ASQX+t6R7/Wj+sHDoAog4sd7RJO3NA0Y/1outkExygaPxesMLH+tx5bHr5UZKLcDpMZHvyhEnNhW0uNK7IKkZtY/czuqMXRYXkb+QU/l+7mZCatO+ONQpjwh3DsdtQaJbUP6M8gxcF/c6UaE1wuC7u1p6bUTWoDVM7VkfsSUAqhZ3/5cx0/RcQZcvK0+tjq2r+stkoQwvgue6OlnciM7SoSBggcHhqIGrZ0PJP3MX7SsjEtBooHFBobnQgIvkvtR/2Ig+MQZe6fh4DaDy7lkS+CqLUSzHjRjB0Ui4uwpJQOcof0GuIuoh23fDu/ajttiMMcYgxqOOJ0JruhA"}</script>
+  <script>
+    const vault = JSON.parse(document.getElementById('vault').textContent);
+    const form = document.getElementById('unlock-form');
+    const passwordInput = document.getElementById('password');
+    const error = document.getElementById('error');
+    const list = document.getElementById('project-list');
+    const gate = document.getElementById('gate');
+    const lockButton = document.getElementById('lock');
+    const bytes = value => Uint8Array.from(atob(value), character => character.charCodeAt(0));
+
+    form.addEventListener('submit', async event => {
+      event.preventDefault();
+      error.textContent = '';
+      const button = form.querySelector('button');
+      button.disabled = true;
+      try {
+        const baseKey = await crypto.subtle.importKey('raw', new TextEncoder().encode(passwordInput.value), 'PBKDF2', false, ['deriveKey']);
+        const key = await crypto.subtle.deriveKey({ name: 'PBKDF2', salt: bytes(vault.salt), iterations: 250000, hash: 'SHA-256' }, baseKey, { name: 'AES-GCM', length: 256 }, false, ['decrypt']);
+        const plaintext = await crypto.subtle.decrypt({ name: 'AES-GCM', iv: bytes(vault.iv) }, key, bytes(vault.data));
+        const projects = JSON.parse(new TextDecoder().decode(plaintext));
+        list.replaceChildren();
+        for (const project of projects) {
+          const article = document.createElement('article');
+          article.className = 'case';
+          const heading = document.createElement('h3');
+          heading.textContent = project.title;
+          const context = document.createElement('small');
+          context.textContent = project.context;
+          const description = document.createElement('p');
+          description.textContent = project.description;
+          article.append(heading, context, description);
+          list.append(article);
+        }
+        passwordInput.value = '';
+        gate.hidden = true;
+        list.hidden = false;
+        lockButton.hidden = false;
+      } catch (_) {
+        error.textContent = 'That password didn’t work.';
+      } finally {
+        button.disabled = false;
+      }
+    });
+    lockButton.addEventListener('click', () => {
+      list.replaceChildren();
+      list.hidden = true;
+      lockButton.hidden = true;
+      gate.hidden = false;
+      passwordInput.focus();
+    });
+  </script>
+</body>
+</html>
