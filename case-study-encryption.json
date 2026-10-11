@@ -1,0 +1,6 @@
+{
+  "salt": "WNEWYtKir61XAgPVdrXrZQ==",
+  "iterations": 310000,
+  "hash": "SHA-256",
+  "note": "Use this salt and derivation settings when encrypting additional case studies with the shared password, so the session unlock works across them."
+}
